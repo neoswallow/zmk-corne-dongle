@@ -34,6 +34,32 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 12 19 20 21 22 23 24 25 26 27 35 36 37 38 39 40 41 45 46 47 42 43 44 34>;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 13 14 15 16 17 18 19 20 21 28 29 30 31 32 33 34 35 42 43 44 45 45 46 47>;
+            hold-trigger-on-release;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -68,10 +94,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp F16       &kp GLOBE     &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp N1           &kp N2          &kp N3        &kp N4                                &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2                          &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp F16       &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                         &trans        &trans                                &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

@@ -108,7 +108,7 @@
             bindings = <
 &trans  &kp N1        &kp N2        &kp N3     &kp N4     &kp N5                               &mmv MOVE_UP                     &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &trans
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &trans     &trans     &trans     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &out OUT_USB  &out OUT_BLE  &kp COMMA  &kp DOT    &trans     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 

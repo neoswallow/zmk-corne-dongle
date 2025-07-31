@@ -82,6 +82,8 @@
             #binding-cells = <0>;
             bindings = <&none &kp H &kp E &kp L &kp L &kp O &kp COMMA &kp SPACE &kp W &kp O &kp R &kp L &kp D &kp EXCL &kp EXCL &kp EXCL &kp RET &kp T &kp H &kp I &kp S &kp SPACE &kp I &kp S &kp SPACE &kp C &kp O &kp R &kp N &kp E>;
             label = "HELLO_WORLD";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 

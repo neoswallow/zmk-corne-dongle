@@ -76,6 +76,15 @@
         tap-ms = <100>;
     };
 
+    macros {
+        hello_world: hello_world {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp H &kp E &kp L &kp L &kp O &kp COMMA &kp SPACE &kp W &kp O &kp R &kp L &kp D &kp EXCL &kp EXCL &kp EXCL &kp RET &kp T &kp H &kp I &kp S &kp SPACE &kp I &kp S &kp SPACE &kp C &kp O &kp R &kp N &kp E>;
+            label = "HELLO_WORLD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -119,7 +128,7 @@
             display-name = "Fn";
             bindings = <
 &studio_unlock   &kp F1      &kp F2     &kp F3     &kp F4          &kp F5                                            &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8     &kp F9     &kp F10     &kp F11
-&trans           &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK       &trans                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &mkp LCLK        &mkp MCLK  &mkp RCLK  &trans      &kp F12
+&hello_world     &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK       &trans                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &mkp LCLK        &mkp MCLK  &mkp RCLK  &trans      &kp F12
 &rgb_ug RGB_TOG  &sys_reset  &trans     &trans     &kp LG(LS(N5))  &kp LG(LC(LS(N4)))  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans     &trans     &sys_reset  &rgb_ug RGB_TOG
                                         &trans     &trans          &trans                                                                             &trans           &trans           &trans
             >;

@@ -1,5 +1,5 @@
-- [Chinese](README.md)
-- [English](README_EN.md)
+- [Chinese](README_CN.md)
+- [English](README.md)
 
 # Update List
 

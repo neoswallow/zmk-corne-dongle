@@ -78,8 +78,8 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - F16
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - AC NEXT KEYBOARD LAYOUT SELECT

@@ -105,10 +105,10 @@
         lower_layer {
             display-name = "Symbol";
             bindings = <
-&trans   &kp EXCLAMATION  &kp AT_SIGN     &kp POUND     &kp DOLLAR                            &kp PERCENT                                 &mmv MOVE_UP                     &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans   &kp F16          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2                          &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &kp GRAVE
-&kp DEL  &trans           &bt BT_CLR_ALL  &trans        &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &bt BT_SEL 4  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE               &kp TILDE
-                                          &trans        &trans                                &trans                                                                       &trans          &kp DEL        &trans
+&kp TILDE2  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND     &kp DOLLAR                            &kp PERCENT                                 &mmv MOVE_UP                     &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans      &kp F16          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2                          &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &kp GRAVE
+&kp DEL     &trans           &bt BT_CLR_ALL  &trans        &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &bt BT_SEL 4  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE               &kp TILDE
+                                             &trans        &trans                                &trans                                                                       &trans          &kp DEL        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -117,10 +117,10 @@
         raise_layer {
             display-name = "Number";
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3     &kp N4     &kp N5                            &mmv MOVE_UP                     &kp N6  &kp N7    &kp N8          &kp N9         &kp N0           &trans
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&trans  &out OUT_USB  &out OUT_BLE  &kp COMMA  &kp DOT    &trans  &trans                    &mmv MOVE_DOWN                   &trans  &kp HOME  &kp PAGE_UP     &kp PAGE_DOWN  &kp END          &trans
-                                    &trans     &trans     &trans                                                             &trans  &trans    &trans
+&kp GRAVE  &kp N1        &kp N2        &kp N3     &kp N4     &kp N5                            &mmv MOVE_UP                     &kp N6          &kp N7    &kp N8          &kp N9         &kp N0           &trans
+&trans     &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS       &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans
+&trans     &out OUT_USB  &out OUT_BLE  &kp COMMA  &kp DOT    &trans  &trans                    &mmv MOVE_DOWN                   &kp UNDERSCORE  &kp HOME  &kp PAGE_UP     &kp PAGE_DOWN  &kp END          &trans
+                                       &trans     &trans     &trans                                                             &trans          &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

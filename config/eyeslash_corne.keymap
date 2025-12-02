@@ -129,10 +129,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock   &kp F1      &kp F2     &kp F3     &kp F4          &kp F5                                            &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8     &kp F9  &kp F10     &kp F11
-&hello_world     &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK       &kp LC(LG(SPACE))                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &trans           &kp RG(K)  &trans  &trans      &kp F12
-&rgb_ug RGB_TOG  &sys_reset  &trans     &trans     &kp LG(LS(N5))  &kp LG(LC(LS(N4)))  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans     &trans  &sys_reset  &rgb_ug RGB_TOG
-                                        &trans     &trans          &trans                                                                             &trans           &trans           &trans
+&studio_unlock   &kp F1      &kp F2     &kp F3         &kp F4          &kp F5                                            &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8     &kp F9  &kp F10     &kp F11
+&hello_world     &trans      &mkp LCLK  &mkp MCLK      &mkp RCLK       &kp LC(LG(SPACE))                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &trans           &kp RG(K)  &trans  &trans      &kp F12
+&rgb_ug RGB_TOG  &sys_reset  &trans     &kp LG(LA(D))  &kp LG(LS(N5))  &kp LG(LC(LS(N4)))  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans     &trans  &sys_reset  &rgb_ug RGB_TOG
+                                        &trans         &trans          &trans                                                                             &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - '4'
+  - Sys
   Number:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -141,7 +141,7 @@ layers:
   - PgDn
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - '4'
+  - Sys
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,13 +190,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB TOG
-  - '4'
+  - Sys
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '4'
-  '4':
+  - Sys
+  Sys:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

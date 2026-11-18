@@ -3,6 +3,8 @@
 
 # Update List
 
+- 2026/06/22
+  1. The keyboard now supports key remapping via DYA STUDIO. Chinese users should contact the seller to obtain the Chinese version of the DYA STUDIO installer. This PC software offers better key remapping functionality than ZMK Studio. Website: https://studio.dya.cormoran.works/
 - 2024/12/21
   1. Added support for zmk-studio (just refresh the left hand to use).
 - 2024/10/24
@@ -20,4 +22,3 @@ For 3D printed model files or any issues and malfunctions with the keyboard, ple
 
 
 <img src="keymap-drawer/eyeslash_corne.svg" >
-

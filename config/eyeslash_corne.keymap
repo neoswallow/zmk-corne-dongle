@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -60,6 +61,20 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 13 14 15 16 17 18 19 20 21 28 29 30 31 32 33 34 35 42 43 44 45 45 46 47>;
             hold-trigger-on-release;
         };
+
+        rsr_vol: rsr_vol {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&kp C_VOL_UP>;
+            ccw-binding = <&kp C_VOL_DN>;
+        };
+
+        rsr_trans: rsr_trans {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <0>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -105,8 +120,7 @@
 &td0     &kp Z                &kp X            &kp C            &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M               &kp COMMA         &kp DOT           &kp FSLH                 &kp LCTRL
                                                &kp LGUI         &mo 1              &lt 3 SPACE                                               &lt 3 ENTER  &mo 2               &kp RALT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         lower_layer {

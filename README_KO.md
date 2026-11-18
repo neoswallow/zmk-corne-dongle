@@ -1,5 +1,25 @@
 [English](README.md) | [中文](README_CN.md) | **한국어**
 
+# Corne 키맵
+
+<img src="keymap-drawer/eyeslash_corne.svg" >
+
+# 업데이트 내역
+
+키보드 제작자의 업데이트 내역입니다.
+
+- 2026/06/22
+  1. DYA STUDIO로 키 변경을 지원합니다. 중국어 사용자는 판매자에게 연락해 중국어판 DYA STUDIO 설치 파일을 받으세요. 이 PC 소프트웨어는 ZMK Studio보다 키 변경 기능이 더 좋습니다. 웹사이트: https://studio.dya.cormoran.works/
+- 2024/12/21
+  1. zmk-studio 지원 추가 (왼쪽 키보드만 다시 플래싱하면 사용 가능).
+- 2024/10/24
+  1. 전원 공급 방식을 바꿔 전력 소모를 줄였습니다.
+  2. RGB 전원 자동 꺼짐 기능을 수정했습니다.
+
+> 10월 24일 이전에 업데이트한 키보드는 최신 펌웨어로 업데이트하세요.
+
+---
+
 # Eyeslash Corne ZMK 펌웨어
 
 Eyeslash Corne 키보드용 ZMK 펌웨어 설정입니다. [a741725193/zmk-corne-dongle](https://github.com/a741725193/zmk-corne-dongle)을 포크했습니다. 두 가지 구성의 펌웨어를 빌드합니다.
@@ -17,22 +37,6 @@ Eyeslash Corne 키보드용 ZMK 펌웨어 설정입니다. [a741725193/zmk-corne
 - [블루투스 및 출력 키](#블루투스-및-출력-키)
 - [키 변경 (ZMK Studio / DYA Studio)](#키-변경-zmk-studio--dya-studio)
 - [문제 해결](#문제-해결)
-
-# 업데이트 내역
-
-키보드 제작자의 업데이트 내역입니다.
-
-- 2026/06/22
-  1. DYA STUDIO로 키 변경을 지원합니다. 중국어 사용자는 판매자에게 연락해 중국어판 DYA STUDIO 설치 파일을 받으세요. 이 PC 소프트웨어는 ZMK Studio보다 키 변경 기능이 더 좋습니다. 웹사이트: https://studio.dya.cormoran.works/
-- 2024/12/21
-  1. zmk-studio 지원 추가 (왼쪽 키보드만 다시 플래싱하면 사용 가능).
-- 2024/10/24
-  1. 전원 공급 방식을 바꿔 전력 소모를 줄였습니다.
-  2. RGB 전원 자동 꺼짐 기능을 수정했습니다.
-
-> 10월 24일 이전에 업데이트한 키보드는 최신 펌웨어로 업데이트하세요.
-
----
 
 # 펌웨어 파일
 
@@ -140,7 +144,3 @@ Studio에서 저장한 변경 사항은 이 저장소가 아니라 해당 기기
 # 연락처 (키보드 제작자)
 
 3D 프린팅 모델 파일이 필요하거나 키보드에 이상이나 고장이 있으면 380465425@qq.com으로 연락하세요.
-
-# Corne 키맵
-
-<img src="keymap-drawer/eyeslash_corne.svg" >

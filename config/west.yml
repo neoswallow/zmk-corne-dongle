@@ -37,7 +37,10 @@ manifest:
       revision: 9c16436efa4c87d19e2e4558927969c7ddd5851d # main
     - name: prospector-zmk-module
       remote: tokyo2006
-      revision: dff418f97839b087cffbb212abb366a93fedcd67 # main
+      # Pinned to main as of 2026-09-20 (last version upstream built successfully).
+      # main moved to LVGL 9 / newer ZMK in Nov 2026 and no longer builds on v0.3.
+      # Not used by any build target in build.yaml (prospector_adapter is commented out).
+      revision: 1bf7f6a806ffb2ddcebc411a6b906dfedddcecf1 # main @ 2026-09-20
     - name: zmk-dongle-display
       remote: englmaxi
       revision: 0ffbec325d58b8a3810cd602d06ca636999ab7ec # v0.3

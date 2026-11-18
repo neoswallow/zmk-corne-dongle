@@ -1,4 +1,14 @@
 ---
+# Firmware files produced by GitHub Actions (see README for which file goes where):
+#
+#   With dongle:    eyeslash_corne_central_dongle_oled  -> dongle
+#                   eyeslash_corne_peripheral_left      -> left half
+#                   eyeslash_corne_peripheral_right     -> right half
+#
+#   Without dongle: eyeslash_corne_central_left_no_dongle -> left half
+#                   eyeslash_corne_peripheral_right       -> right half (same file as above)
+#
+#   Either mode:    settings_reset  -> flash first when switching modes or re-pairing
 include:
 #  - board: nice_nano_v2
 #    shield: eyeslash_corne_central_dongle prospector_adapter
@@ -12,7 +22,15 @@ include:
     artifact-name: eyeslash_corne_central_dongle_oled
   - board: nice_nano_v2
     shield: eyeslash_corne_peripheral_left nice_view_custom
+    artifact-name: eyeslash_corne_peripheral_left
   - board: nice_nano_v2
     shield: eyeslash_corne_peripheral_right nice_view_custom
+    artifact-name: eyeslash_corne_peripheral_right
+  - board: nice_nano_v2
+    shield: eyeslash_corne_central_left nice_view_custom
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    artifact-name: eyeslash_corne_central_left_no_dongle
   - board: nice_nano_v2
     shield: settings_reset
+    artifact-name: settings_reset

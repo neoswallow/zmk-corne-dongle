@@ -8,8 +8,20 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+# No-dongle mode: the left half is the central and talks to the computer
+# directly (USB or Bluetooth). Pair it with the normal right peripheral.
+if SHIELD_EYESLASH_CORNE_CENTRAL_LEFT
 
-if SHIELD_EYESLASH_CORNE_CENTRAL_DONGLE || SHIELD_EYESLASH_CORNE_PERIPHERAL_LEFT || SHIELD_EYESLASH_CORNE_PERIPHERAL_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "Corne_NoDongle"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+
+if SHIELD_EYESLASH_CORNE_CENTRAL_DONGLE || SHIELD_EYESLASH_CORNE_CENTRAL_LEFT || SHIELD_EYESLASH_CORNE_PERIPHERAL_LEFT || SHIELD_EYESLASH_CORNE_PERIPHERAL_RIGHT
 
 config ZMK_SPLIT
     default y

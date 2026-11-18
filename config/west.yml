@@ -1,26 +1,48 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: gpeye
       url-base: https://github.com/GPeye
     - name: tokyo2006
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
+  # All revisions are pinned to commit SHAs so builds are reproducible.
+  # The comment on each line is the branch/tag the SHA was taken from.
+  # To update a dependency, look up the new SHA with:
+  #   git ls-remote https://github.com/<owner>/<repo>.git <branch-or-tag>
   projects:
+    - name: zmk
+      remote: cormoran
+      revision: 4493783ef88ce2e653bf8217c92ee17140df71e3 # v0.3-branch+dya
+      import: app/west.yml
+    - name: zmk-behavior-runtime-sensor-rotate
+      remote: cormoran
+      revision: 3bbd99204671d6a7d539960389a4535f333c3c22 # tag zmk-v0.3.0.0
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: 851661cd21f2aded8ec649da86e01a207dc4b973 # tag zmk-v0.3.0.0
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: 307755dd2ad4d320e14de162e8e5ef018f29d929 # main
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: ad1c995cf910ca989ecd6352a1d0b41ccb18362c # tag zmk-v0.3.0.0
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: dbf92f764de8b6ffd60bf5850514302875fe2570 # tag zmk-v0.3.0.0
     - name: hammerbeam-slideshow
       remote: gpeye
-      revision: main 
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
-      import: app/west.yml
-    - name: prospector-zmk-module                 # <--- and these
-      remote: tokyo2006                          # <---
-      revision: change_spi2
+      revision: 9c16436efa4c87d19e2e4558927969c7ddd5851d # main
+    - name: prospector-zmk-module
+      remote: tokyo2006
+      # Pinned to main as of 2026-09-20 (last version upstream built successfully).
+      # main moved to LVGL 9 / newer ZMK in Nov 2026 and no longer builds on v0.3.
+      # Not used by any build target in build.yaml (prospector_adapter is commented out).
+      revision: 1bf7f6a806ffb2ddcebc411a6b906dfedddcecf1 # main @ 2026-09-20
     - name: zmk-dongle-display
       remote: englmaxi
-      revision: v0.3
+      revision: 0ffbec325d58b8a3810cd602d06ca636999ab7ec # v0.3
   self:
     path: config

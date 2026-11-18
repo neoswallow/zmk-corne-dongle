@@ -9,3 +9,6 @@ config SHIELD_EYESLASH_CORNE_PERIPHERAL_LEFT
 
 config SHIELD_EYESLASH_CORNE_PERIPHERAL_RIGHT
     def_bool $(shields_list_contains,eyeslash_corne_peripheral_right)
+
+config SHIELD_EYESLASH_CORNE_CENTRAL_LEFT
+    def_bool $(shields_list_contains,eyeslash_corne_central_left)

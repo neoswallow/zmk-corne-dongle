@@ -79,7 +79,7 @@ Use this the first time, when switching from the no-dongle setup, or whenever th
 4. **Turn on both halves.** They connect to the dongle automatically within a few seconds, with no pairing on the computer needed. The dongle's screen shows the connection and battery status.
 5. Type a few keys on both halves to check that everything works.
 
-The computer only sees the dongle, as a USB keyboard. The dongle can also pair with computers over Bluetooth (profiles 0–3; see [Bluetooth and output keys](#bluetooth-and-output-keys)).
+The computer only sees the dongle, as a USB keyboard. The dongle can also pair with computers over Bluetooth (profiles 0–4; see [Bluetooth and output keys](#bluetooth-and-output-keys)).
 
 # Setup without dongle
 
@@ -93,12 +93,12 @@ The left half acts as the main device: it connects to the computer and to the ri
 4. **Turn on both halves.** They connect to each other automatically.
 5. **Connect the left half to your computer**, either way:
    - **USB:** plug a cable into the left half.
-   - **Bluetooth:** on the computer, open the Bluetooth settings and pair with **Eyeslash Corne**. To pair another computer, switch to a different profile first (`BT_SEL 0`–`4`, see below).
+   - **Bluetooth:** on the computer, open the Bluetooth settings and pair with **Corne_NoDongle**. To pair another computer, switch to a different profile first (`BT_SEL 0`–`4`, see below).
 6. Type a few keys on both halves to check that everything works.
 
 The left half handles both the computer connection and the right half, so its battery drains faster than in the dongle setup.
 
-**Switching back to the dongle:** follow [Setup with dongle](#setup-with-dongle) from step 1. Reset all three devices, including the dongle, because its saved pairings no longer match the halves. Also remove **Eyeslash Corne** from your computer's Bluetooth device list.
+**Switching back to the dongle:** follow [Setup with dongle](#setup-with-dongle) from step 1. Reset all three devices, including the dongle, because its saved pairings no longer match the halves. Also remove **Corne_NoDongle** from your computer's Bluetooth device list.
 
 # Bluetooth and output keys
 
@@ -115,7 +115,7 @@ These keys are on the **Sys** layer. To get there, hold the left middle thumb ke
 | `Esc` | Unlock ZMK Studio (`studio_unlock`) |
 | `Backspace` | Restart the keyboard (`sys_reset`) |
 
-- **Profiles:** five profiles (0–4) without the dongle. With the dongle there are four (0–3), because two of the dongle's six Bluetooth connections are used by the halves, so profile 4 does nothing.
+- **Profiles:** five profiles (0–4) in both setups. The dongle is configured for 7 paired devices so that its two halves don't take profile slots away.
 - **Output:** when USB is connected the keyboard types over USB, otherwise over Bluetooth. `OUT_USB` / `OUT_BLE` override that.
 - `BT_CLR_ALL` only clears connections to computers. The connection between the halves (and to the dongle) is stored separately and is only cleared by `settings_reset`.
 

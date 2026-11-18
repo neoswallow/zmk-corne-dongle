@@ -13,7 +13,7 @@ endif
 if SHIELD_EYESLASH_CORNE_CENTRAL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Eyeslash Corne"
+    default "Corne_NoDongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

@@ -8,34 +8,38 @@ manifest:
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
+  # All revisions are pinned to commit SHAs so builds are reproducible.
+  # The comment on each line is the branch/tag the SHA was taken from.
+  # To update a dependency, look up the new SHA with:
+  #   git ls-remote https://github.com/<owner>/<repo>.git <branch-or-tag>
   projects:
     - name: zmk
       remote: cormoran
-      revision: v0.3-branch+dya
+      revision: 4493783ef88ce2e653bf8217c92ee17140df71e3 # v0.3-branch+dya
       import: app/west.yml
     - name: zmk-behavior-runtime-sensor-rotate
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: 3bbd99204671d6a7d539960389a4535f333c3c22 # tag zmk-v0.3.0.0
     - name: zmk-module-ble-management
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: 851661cd21f2aded8ec649da86e01a207dc4b973 # tag zmk-v0.3.0.0
     - name: zmk-module-battery-history
       remote: cormoran
-      revision: main
+      revision: 307755dd2ad4d320e14de162e8e5ef018f29d929 # main
     - name: zmk-module-settings-rpc
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: ad1c995cf910ca989ecd6352a1d0b41ccb18362c # tag zmk-v0.3.0.0
     - name: zmk-module-runtime-input-processor
       remote: cormoran
-      revision: zmk-v0.3.0.0
+      revision: dbf92f764de8b6ffd60bf5850514302875fe2570 # tag zmk-v0.3.0.0
     - name: hammerbeam-slideshow
       remote: gpeye
-      revision: main
+      revision: 9c16436efa4c87d19e2e4558927969c7ddd5851d # main
     - name: prospector-zmk-module
       remote: tokyo2006
-      revision: main
+      revision: dff418f97839b087cffbb212abb366a93fedcd67 # main
     - name: zmk-dongle-display
       remote: englmaxi
-      revision: v0.3
+      revision: 0ffbec325d58b8a3810cd602d06ca636999ab7ec # v0.3
   self:
     path: config

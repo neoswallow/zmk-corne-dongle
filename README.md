@@ -1,5 +1,25 @@
 **English** | [中文](README_CN.md) | [한국어](README_KO.md)
 
+# Corne Keymap
+
+<img src="keymap-drawer/eyeslash_corne.svg" >
+
+# Update List
+
+From the keyboard maker:
+
+- 2026/06/22
+  1. The keyboard now supports key remapping via DYA STUDIO. Chinese users should contact the seller to obtain the Chinese version of the DYA STUDIO installer. This PC software offers better key remapping functionality than ZMK Studio. Website: https://studio.dya.cormoran.works/
+- 2024/12/21
+  1. Added support for zmk-studio (just refresh the left hand to use).
+- 2024/10/24
+  1. Modified power supply mode to reduce power consumption.
+  2. Fixed the automatic shut-off feature for RGB power supply.
+
+> If your keyboard was updated before October 24, please update to the latest firmware.
+
+---
+
 # Eyeslash Corne ZMK firmware
 
 ZMK firmware config for the Eyeslash Corne, forked from [a741725193/zmk-corne-dongle](https://github.com/a741725193/zmk-corne-dongle). It builds firmware for two setups:
@@ -17,22 +37,6 @@ Both setups use the same keymap ([`config/eyeslash_corne.keymap`](config/eyeslas
 - [Bluetooth and output keys](#bluetooth-and-output-keys)
 - [Remapping keys (ZMK Studio / DYA Studio)](#remapping-keys-zmk-studio--dya-studio)
 - [Troubleshooting](#troubleshooting)
-
-# Update List
-
-From the keyboard maker:
-
-- 2026/06/22
-  1. The keyboard now supports key remapping via DYA STUDIO. Chinese users should contact the seller to obtain the Chinese version of the DYA STUDIO installer. This PC software offers better key remapping functionality than ZMK Studio. Website: https://studio.dya.cormoran.works/
-- 2024/12/21
-  1. Added support for zmk-studio (just refresh the left hand to use).
-- 2024/10/24
-  1. Modified power supply mode to reduce power consumption.
-  2. Fixed the automatic shut-off feature for RGB power supply.
-
-> If your keyboard was updated before October 24, please update to the latest firmware.
-
----
 
 # Firmware files
 
@@ -140,7 +144,3 @@ Changes saved from Studio are stored on that device, not in this repository. The
 # Contact (keyboard maker)
 
 For 3D printed model files or any issues and malfunctions with the keyboard, please contact 380465425@qq.com
-
-# Corne Keymap
-
-<img src="keymap-drawer/eyeslash_corne.svg" >
